@@ -1,41 +1,20 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
     <head>
-
         
         <title>Clone: Playground</title>
         
-        
         <meta charset="utf-8" />
-
         
-        <meta
-            http-equiv="X-UA-Compatible"
-            content="IE=edge">
-
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link
-            href="https://fonts.googleapis.com/css?family=Euphoria+Script|Open+Sans:400,400i,600,600i,800,800i&amp;subset=latin-ext"
-            rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css?family=Euphoria+Script|Open+Sans:400,400i,600,600i,800,800i&amp;subset=latin-ext" rel="stylesheet">
         
-        <link
-            href="https://fonts.googleapis.com/icon?family=Material+Icons"
-            rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         
-        <link 
-            async 
-            href="/css/app.css"
-            rel="stylesheet">
-
+        <link async href="/tc-jpb-skill-ui/css/app.css" rel="stylesheet">
         
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -44,31 +23,178 @@
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#b91d47">
         <meta name="msapplication-TileColor" content="#b91d47">
         <meta name="theme-color" content="#b91d47">
-
     </head>
-
     
     <body data-clone>
-
-        <div class="pg-hero">
-            <div data-c-radius="rounded">
-                <div data-c-background="black(100)" data-c-color="white" data-c-padding="all(double)">
-                    <h1 data-c-font-size="h1" data-c-margin="bottom(normal)" data-c-font-weight="bold">Welcome to Clone Playground!</h1>
-                    <p data-c-margin="bottom(half)">Playground gives you access to everything you need to have some fun prototyping things with Clone. You can stick to regular HTML, or you can dive into the deep end and build some fun stuff with JavaScript, Sass, and Twig.</p>
-                    <p>Take a peek inside <span data-c-font="mono">app/twig/index.twig</span> to get started!</p>
-                </div>
-                <div class="pg-alert" data-c-color="white" data-c-padding="tb(normal) rl(double)">
-                    <p>Need a refresher on how to use Clone? <a href="https://designwithclone.ca/" title="Open the Clone documentation in a new window or tab." target="_blank">Check out the docs</a>.</p>
+        <div data-c-container="medium" data-c-padding="tb(4)">
+            <div data-c-background="gray(10)" data-c-padding="all(2)" data-c-radius="rounded">
+                <div data-c-grid="gutter(all, 1) middle">
+                    <div data-c-grid-item="tl(1of2)" data-c-align="base(center) tl(left)">
+                        <h5 data-c-font-weight="bold" data-c-font-size="h4" data-c-color="c5">CS Occupational Competencies</h5>
+                    </div>
+                    <div data-c-grid-item="tl(1of2)" data-c-align="base(center) tl(right)">
+                        <span data-c-margin="right(.5)" data-c-font-weight="bold" data-c-font-size="h4" data-c-color="stop">&#9678;</span><span>Aim for 3 to 5 skills.</span>
+                    </div>
+                    <div data-c-grid-item="base(full)">
+                        <div data-c-margin="bottom(.5)">
+                            <button data-c-button="solid(c5)" data-c-radius="rounded">
+                                <i><img src="/tc-jpb-skill-ui/img/minus-circle-solid.svg" alt=""></i>
+                                <span>HTML5</span>
+                            </button>
+                            <button data-c-button="solid(c5)" data-c-radius="rounded">
+                                <i><img src="/tc-jpb-skill-ui/img/minus-circle-solid.svg" alt=""></i>
+                                <span>CSS3</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div data-c-input="text" data-c-grid-item="base(full)">
+                        <label for="TI2">Filter occupational skills using a term...</label>
+                        <span>Required</span>
+                        <div>
+                            <input id="TI2" placeholder="e.g. web design" type="text" />
+                        </div>
+                        <span>This input has an error.</span>
+                    </div>
+                    <div data-c-grid-item="base(full)">
+                        <p data-c-font-weight="bold" data-c-margin="bottom(1)">General CS Competencies</p>
+                        <div data-c-grid="gutter(all, .5) middle">
+                            <div data-c-grid-item="base(1of2) tl(2of3)" data-c-align="base(left)">
+                                <span>Computer Literacy</span>
+                            </div>
+                            <div data-c-grid-item="base(1of2) tl(1of3)" data-c-align="base(right)">
+                                <button data-c-button="reset" data-c-font-size="regular" data-c-font-style="underline" data-c-color="c5" data-c-radius="rounded">
+                                    <span>Add Skill</span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr data-c-hr="thin(gray)" data-c-margin="tb(.5)">
+                        <div data-c-grid="gutter(all, .5) middle">
+                            <div data-c-grid-item="base(1of2) tl(2of3)" data-c-align="base(left)">
+                                <span>JavaScript</span>
+                            </div>
+                            <div data-c-grid-item="base(1of2) tl(1of3)" data-c-align="base(right)">
+                                <button data-c-button="reset" data-c-font-size="regular" data-c-font-style="underline" data-c-color="c5" data-c-radius="rounded">
+                                    <span>Add Skill</span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr data-c-hr="thin(gray)" data-c-margin="tb(.5)">
+                        <div data-c-grid="gutter(all, .5) middle">
+                            <div data-c-grid-item="base(1of2) tl(2of3)" data-c-align="base(left)">
+                                <span>Patience</span>
+                            </div>
+                            <div data-c-grid-item="base(1of2) tl(1of3)" data-c-align="base(right)">
+                                <button data-c-button="reset" data-c-font-size="regular" data-c-font-style="underline" data-c-color="c5" data-c-radius="rounded">
+                                    <span>Add Skill</span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr data-c-hr="thin(gray)" data-c-margin="tb(.5)">
+                        <div data-c-grid="gutter(all, .5) middle">
+                            <div data-c-grid-item="base(1of2) tl(2of3)" data-c-align="base(left)">
+                                <span>PHP</span>
+                            </div>
+                            <div data-c-grid-item="base(1of2) tl(1of3)" data-c-align="base(right)">
+                                <button data-c-button="reset" data-c-font-size="regular" data-c-font-style="underline" data-c-color="c5" data-c-radius="rounded">
+                                    <span>Add Skill</span>
+                                </button>
+                            </div>
+                        </div>
+                        <p data-c-font-weight="bold" data-c-margin="top(2) bottom(1)">CS Engineering Competencies</p>
+                        <div data-c-grid="gutter(all, .5) middle">
+                            <div data-c-grid-item="base(1of2) tl(2of3)" data-c-align="base(left)">
+                                <span>Angular</span>
+                            </div>
+                            <div data-c-grid-item="base(1of2) tl(1of3)" data-c-align="base(right)">
+                                <button data-c-button="reset" data-c-font-size="regular" data-c-font-style="underline" data-c-color="c5" data-c-radius="rounded">
+                                    <span>Add Skill</span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr data-c-hr="thin(gray)" data-c-margin="tb(.5)">
+                        <div data-c-grid="gutter(all, .5) middle">
+                            <div data-c-grid-item="base(1of2) tl(2of3)" data-c-align="base(left)">
+                                <span>Ember.js</span>
+                            </div>
+                            <div data-c-grid-item="base(1of2) tl(1of3)" data-c-align="base(right)">
+                                <button data-c-button="reset" data-c-font-size="regular" data-c-font-style="underline" data-c-color="c5" data-c-radius="rounded">
+                                    <span>Add Skill</span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr data-c-hr="thin(gray)" data-c-margin="tb(.5)">
+                        <div data-c-grid="gutter(all, .5) middle">
+                            <div data-c-grid-item="base(1of2) tl(2of3)" data-c-align="base(left)">
+                                <span>Laravel</span>
+                            </div>
+                            <div data-c-grid-item="base(1of2) tl(1of3)" data-c-align="base(right)">
+                                <button data-c-button="reset" data-c-font-size="regular" data-c-font-style="underline" data-c-color="c5" data-c-radius="rounded">
+                                    <span>Add Skill</span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr data-c-hr="thin(gray)" data-c-margin="tb(.5)">
+                        <div data-c-grid="gutter(all, .5) middle">
+                            <div data-c-grid-item="base(1of2) tl(2of3)" data-c-align="base(left)">
+                                <span>React</span>
+                            </div>
+                            <div data-c-grid-item="base(1of2) tl(1of3)" data-c-align="base(right)">
+                                <button data-c-button="reset" data-c-font-size="regular" data-c-font-style="underline" data-c-color="c5" data-c-radius="rounded">
+                                    <span>Add Skill</span>
+                                </button>
+                            </div>
+                        </div>
+                        <p data-c-font-weight="bold" data-c-margin="top(2) bottom(1)">CS Design Competencies</p>
+                        <div data-c-grid="gutter(all, .5) middle">
+                            <div data-c-grid-item="base(1of2) tl(2of3)" data-c-align="base(left)">
+                                <span>Design Thinking</span>
+                            </div>
+                            <div data-c-grid-item="base(1of2) tl(1of3)" data-c-align="base(right)">
+                                <button data-c-button="reset" data-c-font-size="regular" data-c-font-style="underline" data-c-color="c5" data-c-radius="rounded">
+                                    <span>Add Skill</span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr data-c-hr="thin(gray)" data-c-margin="tb(.5)">
+                        <div data-c-grid="gutter(all, .5) middle">
+                            <div data-c-grid-item="base(1of2) tl(2of3)" data-c-align="base(left)">
+                                <span>Prototyping</span>
+                            </div>
+                            <div data-c-grid-item="base(1of2) tl(1of3)" data-c-align="base(right)">
+                                <button data-c-button="reset" data-c-font-size="regular" data-c-font-style="underline" data-c-color="c5" data-c-radius="rounded">
+                                    <span>Add Skill</span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr data-c-hr="thin(gray)" data-c-margin="tb(.5)">
+                        <div data-c-grid="gutter(all, .5) middle">
+                            <div data-c-grid-item="base(1of2) tl(2of3)" data-c-align="base(left)">
+                                <span>Research Methods</span>
+                            </div>
+                            <div data-c-grid-item="base(1of2) tl(1of3)" data-c-align="base(right)">
+                                <button data-c-button="reset" data-c-font-size="regular" data-c-font-style="underline" data-c-color="c5" data-c-radius="rounded">
+                                    <span>Add Skill</span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr data-c-hr="thin(gray)" data-c-margin="tb(.5)">
+                        <div data-c-grid="gutter(all, .5) middle">
+                            <div data-c-grid-item="base(1of2) tl(2of3)" data-c-align="base(left)">
+                                <span>User Interface Design</span>
+                            </div>
+                            <div data-c-grid-item="base(1of2) tl(1of3)" data-c-align="base(right)">
+                                <button data-c-button="reset" data-c-font-size="regular" data-c-font-style="underline" data-c-color="c5" data-c-radius="rounded">
+                                    <span>Add Skill</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
         
-        <script src="/js/clone/clone.min.js"></script>
-
+        <script src="/tc-jpb-skill-ui/js/clone/clone.min.js"></script>
         
-        <script src="/js/app.js"></script>
-
+        <script src="/tc-jpb-skill-ui/js/app.js"></script>
     </body>
-
 </html>
